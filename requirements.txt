@@ -1,0 +1,16 @@
+# Core LangChain Framework
+langchain==1.0.1
+langchain-community==0.4
+
+# Local LLM with Ollama
+langchain-ollama==1.0.0  # LangChain's Ollama integration
+
+# Vector Database (local, no server needed)
+chromadb==1.2.1
+
+# Document Processing
+pypdf==6.1.2           # For reading PDF files
+
+# Utilities
+tiktoken==0.12.0        # Token counting (helps understand chunk sizes)
+python-dotenv==1.1.1    # Environment variable management
