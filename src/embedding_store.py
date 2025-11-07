@@ -84,7 +84,7 @@ def create_vector_store(
     # which contradicts our configuration for cosine similarity.
     # By the way, "hnsw" refers to the Hierarchical Navigable Small Worlds algorithm,
     # which is a graph-based approximate nearest neighbor search technique used in many
-    # vector databases, including ChromaDB.
+    # vector databases, including
     collection_metadata = {"hnsw:space": DISTANCE_METRIC} 
 
     # Chroma.from_documents is a convenience method that handles both creating the
