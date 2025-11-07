@@ -13,11 +13,10 @@ def load_pdf(file_path: Path) -> List[Document]:
     documents where each page becomes a single LangChain Document object. The
     metadata for each document will contain the source file path and the page number.
 
-    Args:
-        file_path: Path to the PDF file.
-
-    Returns:
-        A list of LangChain Document objects, typically one per page of the PDF.
+    :param file_path: Path to the PDF file.
+    :type file_path: Path
+    :return: A list of LangChain Document objects, typically one per page of the PDF.
+    :rtype: List[Document]
     """
     # LangChain loaders usually expect the path as a string, not a Path object,
     # so we explicitly convert it using str().

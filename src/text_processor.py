@@ -8,7 +8,7 @@ def create_text_splitter(chunk_size: int, chunk_overlap: int) -> RecursiveCharac
     """
     Initializes and configures the text splitter for optimal RAG performance.
     
-    We use the RecursiveCharacterTextSplitter because it's the smartest available.
+    We use the RecursiveCharacterTextSplitter because it's the smartest option available.
     It attempts to split the text on a defined hierarchy of separators, ensuring
     that paragraphs, then sentences, then words are kept together before resorting
     to character splitting. This is vital for maintaining semantic coherence within
